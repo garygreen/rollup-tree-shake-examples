@@ -1,0 +1,17 @@
+{
+  "name": "rollup-tree-shake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run example1 && npm run example2",
+    "example1": "rollup -o dist/only-sortable.js --format es -- tree-shake-examples/only-sortable.js",
+    "example2": "rollup -o dist/with-drag.js --format es -- tree-shake-examples/with-drag.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.10.1"
+  }
+}
